@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+
+<head>
+	<meta charset ="UTF-8">
+	<title>Formulário</title>
+
+	<link rel="stylesheet" href= "reset.css">
+	<link rel="stylesheet" href= "style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"
+
+</head>
+
+<body>
+	<header>
+		<div class="caixa">
+			<h1><a href="index.html"><img src="logo.png" class="imagemlogo"></a></h1>
+
+				<nav>
+					<ul >
+						<li><a href="index.html" class="mover1">Home</a></li>
+						<li><a href="nascasas.html" class="mover2">Nas Casas</a></li>
+						<li><a href="nasescolas.html" class="mover2">Nas Escolas</a></li>
+						<li><a href="formulario.html" class="mover3">Formulário</a></li>
+						<li><a href="feedback.html" class="mover2">Feedback</a></li>
+					</ul>
+				</nav>
+		</div>
+	</header>
+
+	<main>
+
+		<form action="Feedback.html">
+			<label for="nomesobrenome">Nome e Sobrenome</label>
+			<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" class="input-padrao" required>
+
+			<label for="telefone">Telefone</label>
+			<input type="tel" id="telefone" class="input-padrao" required>
+
+			<label for="mensagem">Sua sugestão</label>
+			<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+			<fieldset>
+
+				<legend>Como prefere nosso contato?</legend>
+
+				<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+				<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+
+				<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+
+			</fieldset>
+
+				<fieldset>
+
+					<legend>Qual o horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+
+				</fieldset>
+
+			<label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades via e-mail?</label>
+
+
+			<input type="submit" value="Enviar Formulário" class="Enviar">
+
+		</form>
+
+		<table>
+			<thead>
+
+				<tr>
+					<th>Dia</th>
+					<th>Horário</th>
+			 	</tr>
+			</thead>
+			<tbody>
+					<tr>
+							<td>Segunda-feira</td>
+							<td>08 até às 20hrs</td>
+					</tr>
+					<tr>
+							<td>Quarta-feira</td>
+							<td>08 até às 20hrs</td>
+					</tr>
+					<tr>
+							<td>Sexta-feira</td>
+							<td>08 até às 20hrs</td>
+					</tr>
+			</tbody>
+		</table>
+
+	</main>
+
+	<footer>
+		<img src="logo.png" class="imagemlogo">
+		<p class="Copyright">&copy; Copyright FIAP - 2020</p>
+	</footer>
+</body>
+
+</html>
